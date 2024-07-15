@@ -5,7 +5,7 @@ const jwtAuthMiddleware = (req, res, next) => {
   const authorization = req.headers.authorization;
   if (!authorization) return res.status(401).json({ error: "Token Not Found" });
 
-  // Extract the jwt token from the request headers
+  // Extract the jwt token from the request headers i.e ( Bearer  token ) 
   const token = req.headers.authorization.split(" ")[1];
   if (!token) return res.status(401).json({ error: "Unauthorized" });
 
@@ -13,7 +13,8 @@ const jwtAuthMiddleware = (req, res, next) => {
     // Verify the JWT token i.e extracting the data out of it
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
-    // Attach user information to the request object
+    // Attach user information to the request object i.e adding the informa. of user in the request object
+    // and in this manner the server will get to know the informa. about the user.
     req.user = decoded;
     next();
   } catch (err) {

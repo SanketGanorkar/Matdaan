@@ -53,13 +53,16 @@ router.post("/login", async (req, res) => {
 
     // resturn token as response
     res.json({ token });
-  } catch (err) {}
+  } catch (err) {
+    console.log(err)
+    res.status(500).json({error : 'Internal server error'})
+  }
 });
 
 // Profile route
 router.get('/profile', jwtAuthMiddleware, async (req, res) => {
     try{
-        // this below user is being fetched from the jwt file
+        // this below user is being fetched from the jwt file/token
         const userData = req.user;
         const userId = userData.id;
         const user = await User.findById(userId);

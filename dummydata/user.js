@@ -44,6 +44,7 @@
         "address": "654, JKL Street, RST City",
         "aadharCardNumber": 567890123456,
         "password": "password456"
+        // password updated to "password786"
     },
     {
         "name": "Suresh Verma",
@@ -55,3 +56,9 @@
         "password": "password789"
     }
 ]
+
+// Arun Patel - Admin
+// eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGVlNTI0Mzc2ZGMwMDEzOWE2YzQwYiIsImlhdCI6MTcyMDY0MDgwNSwiZXhwIjoxNzIwNjcwODA1fQ.QpjiwNVGk2-CiWQulV3EOtHgwMeY0gjJDJGVAL-A2nk
+
+// "aadharCardNumber": 567890123456,
+//   "password": "password456",
