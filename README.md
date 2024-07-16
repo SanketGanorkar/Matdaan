@@ -64,11 +64,7 @@ This is a backend application for a voting system where users can vote for candi
 ### Change Password
 - `PUT /users/profile/password`: Change user password
 
-<<<<<<< HEAD
-## Contributing
-=======
 ## Contributions
->>>>>>> 052c7b0d7f5c008824cefd24da1e66706a30b60a
 
 Contributions are welcome! Please follow these steps to contribute:
 
